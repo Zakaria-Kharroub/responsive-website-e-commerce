@@ -372,10 +372,15 @@ color: var(--dore-color);
     .hero{
         display: none;
     }
+    .product-head{
+        margin: 10px 0 -100px 0;
+    }
     footer{
         padding:  50px 50px;
         margin-bottom: 30px;
         text-align: center; 
+        position: relative;
+    margin: -150px 0 0 0;
     }
     
     .footer-icons{

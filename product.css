@@ -19,7 +19,7 @@ body {
 
     background-color: var(--white-color);
 }
-/* ===================================header =================================*/
+/* header */
 header {
     width: 100%;
     height: 80px;
@@ -29,6 +29,99 @@ header {
     padding: 0 100px;
     
 }
+/* main */
+main{
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+
+    /* marge */
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+
+
+
+.card-product{
+    width: 92%;
+    box-shadow: 2px 1px 8px 0px grey;
+    display: flex;
+    height: 100%;
+    border-radius: 20px;
+}
+.product-details{
+    margin: 2% 3% 2% 3%;
+}
+/* content product details */
+.title-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 29px;
+    margin-bottom: 2%;
+}
+.title-price .title-product-details{
+    font-weight: bold;
+} 
+.title-price .price-product-details{
+    color: var(--dore-color);
+}
+.description{
+    margin: 1% 0 1% 0;
+}
+.description .desc-title{
+    font-size: 22px;
+}
+.quantite{
+    font-size: 22px;
+    margin: 5% 0 5% 0;
+}
+.quantite .quantite-t{
+    border-top: 2px solid var(--black-color);
+    border-left:2px solid var(--black-color) ;
+    border-bottom: 2px solid var(--black-color);
+}
+.quantite .quantite-dec{
+    border-top: 2px solid var(--black-color);
+    border-left:2px solid var(--black-color) ;
+    border-bottom: 2px solid var(--black-color);
+}
+.quantite .quantite-nbr{
+    border-top: 2px solid var(--black-color);
+    border-left:2px solid var(--black-color) ;
+    border-bottom: 2px solid var(--black-color);
+}
+.quantite .quantite-inc{
+    border: 2px solid var(--black-color);
+    
+}
+
+.quantite-t ,.quantite-dec,.quantite-nbr,.quantite-inc{
+    padding: 1% 2% 1% 2%;
+}
+.btns-product-details{
+    margin: 5% 0 5% 0;
+}
+.btns-product-details button{
+    background: none;
+    border: none;
+    padding: 1.5% 2.5% 1.5% 2.5%;
+    border: 2px solid ;
+    border-radius: 10px;
+}
+
+.image-product{
+    border-radius: 20px;
+}
+
+
+
+/* ====================main ========================*/
 
 
 .logo {
@@ -80,11 +173,6 @@ header {
     border-radius: 3px;
 
 }
-/* ===================================header =================================*/
-
-
-
-
 
 
 
@@ -143,7 +231,45 @@ color: var(--dore-color);
 /*================================ footer ==============================*/
 
 
+/*----------------------------------- reviews--------------------- */
+.reviews{
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.review-card{
+    width: 80%;
+    /* background-color: #9c9c9c; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    padding-bottom: 20px;
+    border-bottom: dashed black 3px;
+}
+.person-pic-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.person-pic-name img{
+    width: 120px;
+    height:130px;
+    border-radius: 100%;
+}
+.reviews-text-likes{
+    position: relative;
+}
 
+
+/*=============================== reviews===================== */
 
 
 
@@ -235,15 +361,40 @@ color: var(--dore-color);
         margin-bottom: 3%;
     }
 
+
+    /* ====main */
+    .card-product{
+        display: block;
+    }
+    .image-product{
+        width: 100%;
+    }
+    main{
+        padding: 0 10px;
+    }
+    /* =====main===== */
+
+    /* reviews */
+    .reviews{
+        padding: 0 5px;
+    }
+
 }
 
 
 
 @media only screen and (max-width:570px) {
+    .hero{
+        display: none;
+    }
+    .product-head{
+        margin: 10px 0 -100px 0;
+    }
     footer{
         padding:  50px 50px;
         margin-bottom: 30px;
         text-align: center; 
+        position: relative;
     }
     
     .footer-icons{
@@ -266,4 +417,46 @@ color: var(--dore-color);
     .sec2-footer{
         display: block;
     }
+
+    /*----- main---- */
+    .title-price{
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    .description .desc-title{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .quantite{
+        font-size: 19px;
+    }
+    .product-details{
+        margin: 0% 3% 2% 3%; 
+    }
+
+    /* reviews */
+
+  
+   
+    .person-pic-name{
+        gap: 10px;
+    }
+    .person-pic-name img{
+        width: 80px;
+        height:90px;
+        
+    }
+    .reviews-text-likes{
+        position: relative;
+        font-size: 12px;
+    }
+
+
+
+
+
 }
