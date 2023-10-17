@@ -369,6 +369,9 @@ color: var(--dore-color);
 
 
 @media only screen and (max-width:570px) {
+    .hero{
+        display: none;
+    }
     footer{
         padding:  50px 50px;
         margin-bottom: 30px;
