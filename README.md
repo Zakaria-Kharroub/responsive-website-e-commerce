@@ -1,1 +1,1 @@
-# responsive-website-e-commerce
+# responsive-app
