@@ -94,7 +94,7 @@ header {
 .inner-hero{
     padding-left: 20px;
     border-radius: 20px;
-    background-image: url("images/hero-img.png");
+    background-image: url("../images/hero-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 87%;
