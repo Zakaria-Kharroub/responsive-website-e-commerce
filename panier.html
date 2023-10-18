@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/panier.css">
 
     <!-- link icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -60,68 +60,61 @@
     </header>
 
 
+    <h1 style="text-align: center;">CART</h1>
 
     <main>
-        <section class="card-product">
-
-            <img src="./images/prod.png" alt="" class="image-product">
-            
-
-            <div class="product-details">
-                <div class="title-price">
-                    <p class="title-product-details">product title</p>
-                    <p class="price-product-details">$20.00</p>
-                </div>
-                <div class="rating-products">
-                    <span><i class="fa-solid fa-star" style="color: #ffd700;float: left;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffd700;float: left;"></i></span>
-                    <span><i class="fa-solid fa-star" style="color: #ffd700;float: left;"></i></span>
-                    <span><i class="fa-solid fa-star" style="float: left;"></i></span>
-                    <span><i class="fa-solid fa-star" style="float: left;"></i></span>
-                </div><br>
-                <div class="description">
-                    <p class="desc-title">description</p>
-                    <p class="desc-parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ea quasi saepe eum numquam vitae eligendi quas adipisci veritatis sapiente!</p>
-                </div>
+        <section class="cart">
+            <img src="./images/prod.png" alt="" class="image-product-cart" >
+            <div class="cart-product-detail">
+                <p class="title-cart">product title</p>
+                <p class="price-cart" style="color: #A18A68;">$20.00</p>
                 <div class="quantite">
                     <span class="quantite-t"> Quantite </span>
                     <span class="quantite-dec"> - </span>
                     <span class="quantite-nbr"> 2 </span>
                     <span class="quantite-inc"> + </span>
                 </div>
-                <div class="btns-product-details">
-                    <button>ajouter au panier</button>
-                    <button>acheter</button>
+                <div class="total-price">
+                    <p class="cart-produc-total-title">total :</p>
+                    <p class="cart-produc-total-price" style="color: #A18A68;">$ 50.00</p>
                 </div>
+                <a class="delete-btn">delete</a>
+            </div>
+        </section>
+
+        <section class="cart">
+            <img src="./images/prod.png" alt="" class="image-product-cart" >
+            <div class="cart-product-detail">
+                <p class="title-cart">product title</p>
+                <p class="price-cart" style="color: #A18A68;">$20.00</p>
+                <div class="quantite">
+                    <span class="quantite-t"> Quantite </span>
+                    <span class="quantite-dec"> - </span>
+                    <span class="quantite-nbr"> 2 </span>
+                    <span class="quantite-inc"> + </span>
+                </div>
+                <div class="total-price">
+                    <p class="cart-produc-total-title">total :</p>
+                    <p class="cart-produc-total-price" style="color: #A18A68;">$ 50.00</p>
+                </div>
+                <a class="delete-btn">delete</a>
             </div>
         </section>
 
     </main>
-    <h1 style="text-align: center;">reviews</h1>
-    <!-- reviews 2 -->
-    <section class="reviews">
-        <div class="review-card"> 
-            <div class="person-pic-name">
-               <img src="./images/profil-person.jpg" alt="" >
-               <p>nassima</p>
-            </div>
-            <div class="reviews-text-likes">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione culpa eius ullam autem ex! Pariatur repellendus hic distinctio ipsa corrupti.</p>
-            </div>
-        </div>
-    </section>
-    <!-- reviews 2 -->
-    <section class="reviews">
-        <div class="review-card"> 
-            <div class="person-pic-name">
-               <img src="./images/profil-person-2.jpg" alt="" >
-               <p>karim</p>
-            </div>
-            <div class="reviews-text-likes">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione culpa eius ullam autem ex! Pariatur repellendus hic distinctio ipsa corrupti.</p>
-            </div>
-        </div>
-    </section>
+
+    <div class="total-cart-check" >
+        <h1 class="totoal-ttl-check">total : <span style="color:#A18A68;">$ 300.00</span></h1>
+        <a href="" class="checkout-btn">checkout</a>
+    </div>
+
+    
+
+
+
+
+   
+
 
 
 
