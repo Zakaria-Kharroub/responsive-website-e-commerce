@@ -1,0 +1,62 @@
+<form>
+    <fieldset>
+      <legend>Fields marked with * are required</legend>
+      <br/>
+
+      <!-- START DIV part-1 PERSONAL INFORMATION -->
+      <div id="part-1">
+        <h2>Personal Information (required)</h2>
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" required>
+        <br/>
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" required> 
+        <br/>
+        <label for="birthdate">Birth Date</label>
+        <input type="date" name="birthdate" min="1917-01-01" id="birthdate" required>
+        <br/>
+        <label for="age">Age</label>
+        <input type="number" name="age" min="0" max="100" id="age" required>
+        <br/>
+        <label for="gender">Gender</label>
+        <br/>
+        <input type="radio" name="gender" value="female" id="gender" required>Female
+        <br/>
+        <input type="radio" name="gender" value="male" required>Male
+        <br/>
+        <input type="radio" name="gender" value="other" required>Other
+        <br/><br/>
+     
+     
+
+         <!-- START DIV part-2 ACCOUNT INFORMATION -->
+      <div id="part-2">
+        <h2>Account Information (required)</h2>
+        <label for="email">Your e-mail</label>
+        <input type="email" name="email" placeholder="account@email.com" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <!-- END DIV part-2 ACCOUNT INFORMATION -->
+      
+      <!-- START DIV part-3 OTHER INFORMATION -->
+      <div id="part-3">
+        <h2>Other Information (optional)</h2>
+        <label for="rating">How satisfied are you with our website?</label>
+        <br/>
+        <input type="radio" name="rating" id="rating" value="Very satisfied" tabindex="-1">Very satisfied
+        <br/>
+        <input type="radio" name="rating" value="Satisfied" tabindex="-1">Satisfied
+        <br/>
+        <input type="radio" name="rating" value="Dissatisfied" tabindex="-1">Dissatisfied
+        <br/><br/>
+        <label for="message">What can we do to improve our website?</label>
+        <br/>
+        <textarea rows="5" cols="50" id="message" tabindex="-1"></textarea>
+      </div>
+      <!-- END DIV part-3 ACCOUNT INFORMATION -->
+      <br/><br/>
+      <input type="submit" id="submitButton" name="submitButton" value="Send-message">
+      <input type="reset" id="resetButton" value="Reset all info" tabindex="-1">
+    </fieldset>
+  </form>
